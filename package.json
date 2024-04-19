@@ -1,0 +1,22 @@
+{
+  "name": "habib-wordcounter-with-typing-speed",
+  "version": "1.0.1",
+  "description": "In this project I have the added the timer functionality in the word counter project, which, basically is going to tell you what is your typing speed in the span you typed continuously.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "habib-wordcounter-with-typing-speed": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bro-Habib and Anees-Hanif",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.19"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
