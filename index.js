@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import gradient from "gradient-string";
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.greenBright.bold.bgWhiteBright("\t\t\t\t\t\t Words Counter"));
@@ -20,7 +21,8 @@ async function main() {
     const wordCount = words.length;
     const typingSpeed = Math.round(wordCount / elapsedTime * 60); // WPM calculation
     console.log(chalk.cyanBright.bold.italic.underline(`\tYou typed ${wordCount} words in ${elapsedTime.toFixed(2)} seconds.`));
-    console.log(chalk.blueBright.bold.italic.overline(`\tYour typing speed is approximately ${typingSpeed} WPM.`));
+    console.log(chalk.blueBright.bold.italic(`\tYour typing speed is approximately ${typingSpeed} WPM.`));
+    console.log(gradient.instagram("Thanks for Using 🙌"));
 }
 main().catch((error) => {
     console.error(error);

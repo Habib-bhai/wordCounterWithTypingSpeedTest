@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import gradient from "gradient-string"
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(
@@ -31,6 +32,8 @@ async function main() {
   
     console.log(chalk.cyanBright.bold.italic.underline(`\tYou typed ${wordCount} words in ${elapsedTime.toFixed(2)} seconds.`));
     console.log(chalk.blueBright.bold.italic(`\tYour typing speed is approximately ${typingSpeed} WPM.`));
+    console.log(gradient.instagram("Thanks for Using 🙌"));
+    
   }
   
   main().catch((error) => {
