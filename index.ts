@@ -7,9 +7,9 @@ console.log(
     "\t\t\t\t\t\t Words Counter"
   )
 );
-console.log(chalk.blueBright("\nDeveloped By:"));
-console.log(chalk.redBright.underline("\tHabib Ullah &"));
-console.log(chalk.redBright.underline("\t Anees Hanif"));
+console.log(chalk.redBright("\nDeveloped By:"));
+console.log(chalk.hex("FFA533").underline("\tHabib Ullah &"));
+console.log(chalk.hex("FFA533").underline("\t Anees Hanif"));
 console.log("\n");
 
 async function main() {
